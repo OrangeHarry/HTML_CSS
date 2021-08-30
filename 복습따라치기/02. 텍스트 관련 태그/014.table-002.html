@@ -15,29 +15,29 @@
 </head>
 
 <body>
-    <!-- table[border="1"]>(colgroup>col[style="width:"]*4)+(tr>(th+td)*2(tr>(th+td))*2 -->
+    <!--이거 아니야.. table[border="1"]>(colgroup>col[style="width:]*4)+(tr>(th+td)*2+(tr>(th+td))*2 -->
     <table border="1">
-        <!-- colgroup : 컬럼을 묶는 태그 -->
-        <colgroup>
-            <!-- 지정된 컬럼에 스타일 적용하는 태그 -->
-            <col style="width:100px">
-            <col style="width:300px">
-            <col style="width:100px">
-            <col style="width:300px">
+        (<colgroup>
+            <col style="width: 100px;">
+            <col style="width: 300px;">
+            <col style="width: 100px;">
+            <col style="width: 300px;">
         </colgroup>
         <tr>
             <th>이름</th>
             <td></td>
             <th>연락처</th>
             <td></td>
-        </tr>
         <tr>
             <th>주소</th>
+            <!-- colspan : 행 합치기-->
+            <!-- rowspan : 열 합치기-->
             <td colspan="3"></td>
         </tr>
         <tr>
             <th>자기소개</th>
             <td colspan="3"></td>
+        </tr>
         </tr>
     </table>
 </body>
