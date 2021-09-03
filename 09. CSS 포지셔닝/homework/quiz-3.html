@@ -20,22 +20,27 @@ header nav {
 	width:70%;
 	margin-top: 50px;
 }
+header img{
+	float: right;
+}
 nav ul{
 	list-style-type:none;	
+	position: absolute;
+	bottom: 75%;
+	clear: both;
 }
 nav ul li{
 	font-weight:bold;
 	margin: 15px;
-	/* display: inline-block; */
 	float: left;
 }
 nav ul li a{
 	color:white;
 	text-decoration:none;	
+	clear: both;
 }
 footer p {
 	padding:20px;
-	clear: left;
 }
 h1{font-size:2em;}
 h2{font-size:1.5em;}
@@ -54,11 +59,15 @@ section article{
 	margin:5px;
 	padding:10px;	
 	border:1px solid #ccc;
+	float: left;
 }
 aside{
-  width:200px;
-  height:auto;
-  margin-top:80px;
+	width:200px;
+	height: auto;
+	margin-top: -250px;
+	float: right;
+	position: static;
+	border: 1px solid darkgreen;
 }
 footer{
 	width: 800px;
@@ -66,7 +75,9 @@ footer{
 	background-color:#333;
 	color:white;	
 	text-align:center;
+	clear: both;
 }
+
 .at1, .at2, .at3, .at4 {
 	transition:2s;
 	-webkit-transition:2s;
@@ -90,15 +101,13 @@ footer{
 	background-color:#fc3;
 	border:1px solid red;
 }
-article{
-	float: left;
-}
+
 </style>
 </head>
 <body>
 <div id="wrapper">
 <header>
-	<!-- <img src="images/nav2.png" alt=""> -->
+	<img src="images/nav2.png" alt="">
 	<nav>
     <ul>
       <li><a href="#">애완견 종류</a></li>
@@ -126,12 +135,12 @@ article{
     <h3>이름표, 목줄</h3> 
     <p>강아지를 잃어버릴 염려가 있으니 산책할 무렵이 되면 이름표를 꼭 목에 걸어주도록 하세요. 그리고 방울이 달린 목걸이를 하고자 하실 때는 신중하셔야 합니다. 움직일 때마다 방울이 딸랑 거리면 신경이 예민한 강아지들에게는 좋지 않은 영향을 끼칠 수 있기 때문입니다.</p>
    </article>
- </section>
-<aside>
-		<img src="images/1.png" alt="">
-		<img src="images/2.png" alt="">
-		<img src="images/3.png" alt="">
-</aside>
+</section>
+   <aside>
+	   <img src="images/1.png" alt="">
+	   <img src="images/2.png" alt="">
+	   <img src="images/3.png" alt="">
+	</aside>
 <footer>
   <p>Copyright 2012 funnycom</p>
 </footer>
